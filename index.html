@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF8">
+    <title>TODOS</title>
+</head>
+<body>
+<div class="todos-header">
+    <h1>TODOS</h1>
+</div>
+<div class="todos-wrapper">
+    <div class="todos-input">
+        <button class="todos-input_select-all" aria-label="Mark all activities as done"></button>
+        <input placeholder="What needs to be done?" aria-label="Field for input your activities"/>
+    </div>
+    <div class="todos-items-list">
+        <div class="todos-item">
+            <input class="todos-item_done_mark" type="checkbox" aria-label="Mark item as done"/>
+            <textarea class="todos-item_text" aria-label="Mark item"> HTML </textarea>
+            <button class="todos-item_delete" aria-label="Delete item"></button>
+        </div>
+        <div class="todos-item __done">
+            <input class="todos-item_done_mark" checked= "checked" type="checkbox" aria-label="Mark item as done"/>
+            <textarea class="todos-item_text" aria-label="Mark item"> CSS </textarea>
+            <button class="todos-item_delete" aria-label="Delete item"></button>
+        </div>
+        <div class="todos-item">
+            <input class="todos-item_done_mark" type="checkbox" aria-label="Mark item as done"/>
+            <textarea class="todos-item_text" aria-label="Mark item"> JavaScript </textarea>
+            <button class="todos-item_delete" aria-label="Delete item"></button>
+        </div>
+        <div class="todos-item">
+            <input class="todos-item_done_mark" type="checkbox" aria-label="Mark item as done"/>
+            <textarea class="todos-item_text" aria-label="Mark item"> JSCode </textarea>
+            <button class="todos-item_delete" aria-label="Delete item"></button>
+        </div>
+    </div>
+
+    <div class="todos-status-bar">
+        <div class="todos-status-bar_counter" aria-label="Number of undone tasks">
+            4 tasks to do
+        </div>
+        <div class="todos-status-bar_filters">
+            <button class="todos-filter __marked" aria-label="Show all items" data-filter="all">All</button>
+            <button class="todos-filter" aria-label="Show done items" data-filter="all">Done</button>
+            <button class="todos-filter" aria-label="Show undone items" data-filter="all">Undone</button>
+        </div>
+        <button class="todos-status-bar_delete-completed" aria-label="Delete completed items">
+            Delete completed
+        </button>
+    </div>
+</div>
+</body>
+</html>
