@@ -1,0 +1,85 @@
+.todos-item {
+    border-bottom: 1px solid #e6e6e6;
+    }
+
+    .todos-item:after {
+        content: '';
+        display: block;
+        clear: both;
+        width: 100%;
+        }
+
+    .todos-item_done-mark-wrap {
+        width: 60px;
+        height: 60px;
+        background: none;
+        float:left;
+        box-sizing: border-box;
+        position: relative;
+        }
+        .todos-item_done-mark {
+            width: 30px;
+            height: 30px;
+            opacity: 0;
+            }
+        .todos-item_done-mark:after  {
+            opacity: 100;
+            content: '';
+            border: 1px;
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            /*border-radius: 15px;*/
+            background: #e61016;
+            left: 50%;
+            top: 50%;
+            margin: -18px -18px;
+            z-index: 0;
+            }
+
+
+
+    .todos-item_text-wrap {
+        overflow: hidden;
+        height: 60px;
+        position: relative;
+        }
+
+        .todos-item_text {
+
+            resize: none;
+            width: 100%;
+            border: 0;
+            background: none;
+            color: #666;
+            font-size: 17px;
+            font-weight: 200;
+            margin: 17px 0 0 0;
+            padding-right: 10px;
+            outline: none;
+            box-sizing: border-box;
+            }
+    .todos-item_delete {
+        width: 60px;
+        height: 60px;
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        float: right;
+        outline: none;
+        }
+.todos-item:hover{
+    background: #fafafa;
+    }
+    .todos-item:hover .todos-item_delete_icon {
+        opacity: 100;
+        width: 16px;
+        height: 16px;
+        background: url('../../img/icons/close.png') no-repeat 0 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -8px -8px;
+        }
