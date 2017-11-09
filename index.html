@@ -22,14 +22,16 @@
         </div>
         <div class="todos-items-list">
             <div class="todos-item">
+                <div class="todos-item_done-mark-wrap">
+                    <input class="todos-item_done-mark" type="checkbox" aria-label="Mark item as done"/>
+
+                    <div class="todos-item_done-mark_visible"></div>
+                </div>
                 <button class="todos-item_delete" aria-label="Delete item">
                     <div class="todos-item_delete_icon"></div>
                 </button>
-                <div class="todos-item_done-mark-wrap">
-                    <input class="todos-item_done-mark" type="checkbox" aria-label="Mark item as done"/>
-                </div>
                 <div class="todos-item_text-wrap" >
-                    <textarea class="todos-item_text" aria-label="Mark item"> HTML </textarea>
+                    <div class="todos-item_text" contenteditable="true">HTML</div>
                 </div>
             </div>
             <div class="todos-item __done">
@@ -38,9 +40,10 @@
                 </button>
                 <div class="todos-item_done-mark-wrap">
                     <input class="todos-item_done-mark" type="checkbox" checked="checked" aria-label="Mark item as done"/>
+                    <div class="todos-item_done-mark_visible"></div>
                 </div>
                 <div class="todos-item_text-wrap" >
-                    <textarea class="todos-item_text" aria-label="Mark item"> CSS </textarea>
+                    <div class="todos-item_text" contenteditable="true">CSS</div>
                 </div>
             </div>
             <div class="todos-item">
@@ -49,9 +52,10 @@
                 </button>
                 <div class="todos-item_done-mark-wrap">
                     <input class="todos-item_done-mark" type="checkbox" aria-label="Mark item as done"/>
+                    <div class="todos-item_done-mark_visible"></div>
                 </div>
                 <div class="todos-item_text-wrap" >
-                    <textarea class="todos-item_text" aria-label="Mark item"> JavaScript </textarea>
+                    <div class="todos-item_text" contenteditable="true">JS</div>
                 </div>
             </div>
             <div class="todos-item">
@@ -60,9 +64,10 @@
                 </button>
                 <div class="todos-item_done-mark-wrap">
                     <input class="todos-item_done-mark" type="checkbox" aria-label="Mark item as done"/>
+                    <div class="todos-item_done-mark_visible"></div>
                 </div>
                 <div class="todos-item_text-wrap" >
-                    <textarea class="todos-item_text" aria-label="Mark item"> JScode </textarea>
+                    <div class="todos-item_text" contenteditable="true">JSCode</div>
                 </div>
             </div>
         </div>
